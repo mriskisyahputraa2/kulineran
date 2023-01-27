@@ -3,31 +3,26 @@
     <Navbar />
     <div class="container">
       <Hero />
-
-      <div class="row mt-4">
+      <div class="row mt-">
         <div class="col">
           <h2>
             Best
             <strong>Foods</strong>
           </h2>
         </div>
-
         <div class="col">
-          <route-link to="/food" class="btn btn-success float-right">
-            <i class="fa fa-eye"></i> Lihat semua
-          </route-link>
+          <router-link to="/foods" class="btn btn-success"><i class="fa fa-eye"></i>Lihat Semua</router-link>
         </div>
-      </div>  
-
-      <div class="row mb-3">
-        <div clas="col-md-3 mt-4" v-for="product in products" :key="product.id"> <!--v.product akan ditampilkan, dan key untuk menampilkan api product berdasarkan id-->
-          <CardProduct  :product="product"/> <!--tampilkan product-->
+      </div>
+      
+      <div class="row mb-4">
+        <div class="col-md-4 mt-4" v-for="product in products" :key="product.id"> <!--mengambil data products dan change jadi product dari idnya-->
+          <CardProduct :product="product"/>  <!-- dan disini untuk menampilkannya-->
         </div>
       </div>
     </div>
   </div>
 </template>
-
 <script>
 // @ is an alias to /src
 import Navbar from "@/components/Navbar.vue";
@@ -39,7 +34,7 @@ export default {
   components: {
     Navbar,
     Hero,
-    CardProduct
+    CardProduct,
   },
 
   // mulai menggunakan API

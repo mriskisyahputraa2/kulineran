@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Foods from '../views/Foods.vue'
+import FoodsDetail from '../views/FoodsDetail.vue'
 
 const routes = [
   {
@@ -10,8 +11,13 @@ const routes = [
   },
   {
     path: '/foods',
-    name: 'foods',
+    name: 'Foods',
     component: Foods
+  },
+  {
+    path: '/foods/:id', // menginput data berdasarkan id.
+    name: 'FoodDetail',
+    component: FoodsDetail
   },
   {
     path: '/about',

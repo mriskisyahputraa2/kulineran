@@ -11,14 +11,14 @@
                 <br />in Your Cadget
               </h2>
               <p>Ayo pesan dan pilih makanan favorit kamu, SEKARANG!!!</p>
-              <button class="btn btn-lg btn-success">
+              <router-link to="/foods" class="btn btn-lg btn-success">
                 <i class="fa fa-arrow-right"></i> PESAN
-              </button>
+              </router-link>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <img src="../assets/img/hero.png" width="100% " alt />
+          <img src="../assets/img/hero.png" width="100%" alt />
         </div>
       </div>
       <!-- End Desktop -->

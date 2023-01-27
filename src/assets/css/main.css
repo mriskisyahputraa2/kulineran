@@ -14,12 +14,24 @@
 .fa-cart-plus:hover{
     color: #4EB883;
 }
-/* route-link{
-    position: absolute;
-    right: 13%;
-    bottom: 15%;
-} */
 
+.card-product{
+    border-radius: 15px;
+}
+.card-img-top{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 .mt-4{
     margin-bottom: 30px;
+    /* padding: 10px; */
+    /* position: relative; */
+}
+.breadcrumb{
+    padding: 0;
+    background-color: transparent;
+}
+.breadcrumb-item.active{
+    color: black;
+    font-weight: bold;
 }
